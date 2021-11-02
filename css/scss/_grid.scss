@@ -6,7 +6,7 @@ $m-device: 760px;
 $s-device: 480px;
 
 // Box Sizing
-/* Geral */
+/* Box Sizing */
 *,
 *::after,
 *::before {
@@ -107,8 +107,8 @@ $s-device: 480px;
 
     @include d(s) {
         max-width: $s-device;
-        margin-left: 0;
-        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     @include clearfix;
@@ -117,4 +117,22 @@ $s-device: 480px;
 /* Container */
 .container {
     @include container;
+}
+
+/* Row */
+@mixin row {
+    position: relative;
+    margin-left: -$gutter / 2;
+    margin-right: -$gutter / 2;
+
+    @include d(s) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include clearfix;
+}
+
+.row {
+    @include row;
 }
