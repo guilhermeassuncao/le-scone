@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-  <img src="public/le-scone-github.svg" alt="Le Scone">
+  <img src="public/img/le-scone-github.svg" alt="Le Scone">
 </div>
 
 <br>
