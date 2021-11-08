@@ -1,0 +1,23 @@
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background: $cinza;
+    @include box-shadow(0 0 0 10px $cinza);
+
+    &-p {
+        padding-top: 10px;
+        color: $bege-claro;
+        @include d(s) {
+            text-align: center;
+        }
+    }
+
+    &-img {
+        float: right;
+
+        @include d(s) {
+            float: none;
+            margin: 20px auto;
+        }
+    }
+}

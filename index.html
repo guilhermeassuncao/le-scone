@@ -13,7 +13,7 @@
         <!-- Fim Fontes -->
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
         <!-- Fim CSS -->
 
         <!-- Title -->
@@ -25,7 +25,7 @@
         <main class="header">
             <div class="container">
                 <div class="grid-5">
-                    <img class="header-logo" src="./img/lescone.png" alt="Le Scone" />
+                    <img class="header-logo" src="./public/img/lescone.png" alt="Le Scone" />
                     <div class="header-info">
                         <p class="header-info-p">
                             De Seg. à Sab. <span class="header-info-open"></span> <br />
@@ -36,7 +36,7 @@
                     <p class="header-phone">+55 021 2412-3333</p>
                 </div>
                 <div class="grid-7">
-                    <img class="header-img-main" src="./img/foto.png" alt="Foto do Le Scone" />
+                    <img class="header-img-main" src="./public/img/foto.png" alt="Foto do Le Scone" />
                 </div>
             </div>
         </main>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="grid-7 offset-1">
                     <div class="menu-item">
-                        <img class="menu-item-img" src="./img/prato-1.png" alt="Prato 1" />
+                        <img class="menu-item-img" src="./public/img/prato-1.png" alt="Prato 1" />
                         <h2 class="menu-item-title">Entradas</h2>
                         <ul>
                             <li class="menu-item-list"><span class="menu-item-list-price">R$ 1,70</span> Ovos Mexidos</li>
@@ -61,7 +61,7 @@
                         </ul>
                     </div>
                     <div class="menu-item">
-                        <img class="menu-item-img" src="./img/prato-2.png" alt="Prato 2" />
+                        <img class="menu-item-img" src="./public/img/prato-2.png" alt="Prato 2" />
                         <h2 class="menu-item-title">Entradas</h2>
                         <ul>
                             <li class="menu-item-list"><span class="menu-item-list-price">R$ 10,70</span> Penne com Queijo</li>
@@ -83,29 +83,29 @@
                     <h1 class="title">Contato</h1>
                 </div>
                 <div class="grid-7 offset-1">
-                    <form>
-                        <label>Nome</label>
-                        <input type="text" />
+                    <form class="contato-form">
+                        <label class="contato-form-label">Nome</label>
+                        <input type="text" class="contato-form-input" />
                         <div class="row">
                             <div class="grid-7">
-                                <label>E-mail</label>
-                                <input type="text" />
+                                <label class="contato-form-label">E-mail</label>
+                                <input type="text" class="contato-form-input" />
                             </div>
                             <div class="grid-5">
-                                <label>Telefone</label>
-                                <input type="text" />
+                                <label class="contato-form-label">Telefone</label>
+                                <input type="text" class="contato-form-input" />
                             </div>
                         </div>
-                        <label>Mensagem</label>
-                        <textarea></textarea>
-                        <input class="button" type="button" value="Enviar" />
+                        <label class="contato-form-label">Mensagem</label>
+                        <textarea class="contato-form-textarea" rows="3"></textarea>
+                        <input class="contato-form-button" type="button" value="Enviar" />
                     </form>
                     <div class="contato-info">
                         <p>contato@lescone.com ////</p>
                         <p>+55 021 2412-3333 ////</p>
                     </div>
                     <a href="#" class="contato-map">
-                        <img src="img/map.png" alt="Como chegar em Le Scone" />
+                        <img class="contato-map-img" src="./public/img/map.png" alt="Como chegar em Le Scone" />
                     </a>
                 </div>
             </div>
@@ -113,11 +113,11 @@
         <!-- Fim Contato -->
 
         <!-- Footer -->
-        <footer class=footer>
+        <footer class="footer">
             <div class="container">
-                <p class="grid-9">Le Scone © 1989 - 2016. Alguns direitos reservados</p>
+                <p class="grid-9 footer-p">Le Scone © 1989 - 2016. Alguns direitos reservados</p>
                 <a class="grid-3" href="https://www.origamid.com" target="_blank">
-                    <img src="img/lescone-icone.png" alt="Le Scone Icone">
+                    <img class="footer-img" src="./public/img/lescone-icone.png" alt="Le Scone Icone" />
                 </a>
             </div>
         </footer>
