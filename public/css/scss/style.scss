@@ -1,11 +1,8 @@
-//Gerais
-@import "reset";
-@import "grid";
-@import "variaveis-mixins";
-@import "geral";
-
-//Internas
-@import "header";
-@import "menu";
-@import "contato";
-@import "footer";
+@import 'reset';
+@import 'grid';
+@import 'variaveis-mixins';
+@import 'geral';
+@import 'header';
+@import 'menu';
+@import 'contato';
+@import 'footer';

@@ -1,20 +1,16 @@
-//Cores
 $bege-claro: #edece4;
 $bege-medio: #cbc6b9;
 $bege-escuro: #988c77;
 $cinza: #2a2426;
 $verde: #1ab912;
 
-//Fontes
-$fonte-1: "PT Mono", monospace;
-$fonte-2: "Aref Ruqaa", serif;
+$fonte-1: 'PT Mono', monospace;
+$fonte-2: 'Aref Ruqaa', serif;
 
-//Funcoes
 @function em($pixel, $context: 16) {
     @return $pixel / $context + em;
 }
 
-//Mixins
 @mixin tipo-1($size) {
     font-family: $fonte-1;
     @if $size == 18 {
@@ -28,8 +24,7 @@ $fonte-2: "Aref Ruqaa", serif;
     @if $size == 18 {
         font-size: em(18);
         line-height: em(30, 18);
-    }
-    @else if $size == 24 {
+    } @else if $size == 24 {
         font-size: em(24);
         line-height: em(30, 24);
     }
@@ -40,4 +35,3 @@ $fonte-2: "Aref Ruqaa", serif;
     -moz-box-shadow: $shadow;
     box-shadow: $shadow;
 }
-

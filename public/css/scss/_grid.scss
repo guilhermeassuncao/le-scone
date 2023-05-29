@@ -1,38 +1,33 @@
-// Variaveis do Grid
 $cols: 12;
 $gutter: 20px;
 $l-device: 1200px;
 $m-device: 760px;
 $s-device: 480px;
 
-// Box Sizing
-/* Box Sizing */
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
 
-// Mixin Media Queries
 @mixin d($size) {
     @if $size == l {
         @media screen and (min-width: $l-device) {
             @content;
         }
     } @else if $size == m {
-        @media screen and (min-width: $m-device) and (max-width: $l-device - 1) {
+        @media screen and (min-width: $m-device) and (max-width: ($l-device - 1)) {
             @content;
         }
     } @else if $size == s {
-        @media screen and (max-width: $m-device - 1) {
+        @media screen and (max-width: ($m-device - 1)) {
             @content;
         }
     }
 }
 
-// Função Grid
 @function grid($col, $offset: false) {
-    $width: $col / $cols * 100 + "%";
+    $width: $col / $cols * 100 + '%';
     $result: calc(#{$width} - #{$gutter});
 
     @if $offset == offset {
@@ -43,15 +38,12 @@ $s-device: 480px;
     @return $result;
 }
 
-//Gerar as Classes de grid
-/* Grid */
 @for $i from 1 through $cols {
     .grid-#{$i} {
         width: grid($i);
     }
 }
 
-//Mixin Estrutura do Grid
 @mixin grid-structure {
     float: left;
     min-height: 1px;
@@ -66,12 +58,10 @@ $s-device: 480px;
     }
 }
 
-[class^="grid-"] {
+[class^='grid-'] {
     @include grid-structure;
 }
 
-//Gerar as Classes de offset
-/* Offset */
 @for $i from 1 through $cols {
     .offset-#{$i} {
         margin-left: grid($i, offset);
@@ -85,17 +75,15 @@ $s-device: 480px;
     }
 }
 
-//Mixin de Clearfix
 @mixin clearfix {
     &::after,
     &::before {
-        content: "";
+        content: '';
         display: table;
         clear: both;
     }
 }
 
-//Mixin do Container
 @mixin container {
     max-width: $l-device;
     margin: 0 auto;
@@ -114,12 +102,10 @@ $s-device: 480px;
     @include clearfix;
 }
 
-/* Container */
 .container {
     @include container;
 }
 
-/* Row */
 @mixin row {
     position: relative;
     margin-left: -$gutter / 2;
